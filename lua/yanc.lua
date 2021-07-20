@@ -1,0 +1,1 @@
+/home/yanc/.config/nvim/yanc.lua
