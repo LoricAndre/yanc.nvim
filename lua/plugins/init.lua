@@ -27,16 +27,7 @@ use {
   'kyazdani42/nvim-tree.lua',
   requires = 'kyazdani42/nvim-web-devicons',
   as = 'tree',
-  opt = true,
-  cmd = {
-    'NvimTreeToggle',
-    'NvimTreeOpen',
-    'NvimTreeClose',
-    'NvimTreeRefresh',
-    'NvimTreeClipboard',
-    'NvimTreeFindFile',
-    'NvimTreeResize'
-  }
+  config = function() require'plugins.tree' end
 }
 use {
   'neovim/nvim-lspconfig'
@@ -50,8 +41,6 @@ use {
   'liuchengxu/vista.vim',
   as = 'vista',
   require = 'nvim/nvim-lspconfig',
-  opt = true,
-  cmd = 'Vista',
   config = function() require'plugins.vista' end,
 }
 use {

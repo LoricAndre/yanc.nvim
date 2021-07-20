@@ -1,3 +1,5 @@
+local map = require'utils'.add_map
+
 require'trouble'.setup {
   signs = {
      -- icons / text used for a diagnostic
@@ -8,3 +10,5 @@ require'trouble'.setup {
      other = "﫠"
    },
 }
+
+map {'nn', '<leader>oq', ':TroubleToggle<CR>', opt = {silent = true}}
