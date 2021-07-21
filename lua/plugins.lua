@@ -111,7 +111,6 @@ use {
   'LoricAndre/OneTerm.nvim',
   as = 'oneterm',
   config = function() require'plugins.oneterm' end,
-  branch = 'dev'
 }
 use {
   'rmagatti/auto-session'
