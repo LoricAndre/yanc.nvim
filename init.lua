@@ -1,0 +1,7 @@
+require'variables'
+require'options'
+require'mappings'
+require'commands'
+require'config'
+require'plugins'
+require'custom'
