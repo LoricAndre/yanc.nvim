@@ -21,7 +21,8 @@ local default_options = {
   mouse = 'a',
   completeopt = 'menuone,noselect',
   undodir = vim.fn.stdpath('data') .. '/undodir',
-  undofile = true
+  undofile = true,
+  timeoutlen = 300
 }
 
 
