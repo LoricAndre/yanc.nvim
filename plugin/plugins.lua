@@ -128,6 +128,14 @@ use {
   'ray-x/lsp_signature.nvim',
   config = function() require'plugins.lsp_signature' end
 }
+use {
+  'lukas-reineke/format.nvim'
+}
+
+use {
+  'folke/which-key.nvim',
+  config = function() require'plugins.which-key' end
+}
 
 local user_plugins = require'yanc'.plugins
 for _, plugin in pairs(user_plugins) do
