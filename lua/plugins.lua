@@ -132,6 +132,10 @@ use {
 }
 
 use {
+  'yamatsum/nvim-cursorline'
+}
+
+use {
   'folke/which-key.nvim',
   config = function() require'plugins.which-key' end
 }
