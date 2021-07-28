@@ -10,4 +10,4 @@ vim.g.startify_commands = {
 }
 
 vim.g.startify_session_dir = vim.fn.stdpath('data') .. '/sessions'
-vim.nvim_set_keymap('n', '<leader>os', ':Startify<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>os', ':Startify<CR>', {noremap = true, silent = true})
