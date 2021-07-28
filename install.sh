@@ -30,6 +30,6 @@ git remote rename origin template
 git remote set-url --push template DISABLED
 
 echo '[alias]' >> "$config_dir/nvim/.git/config"
-echo 'merge-template = ! "git fetch template && find * -path lua/yanc.lua -prune -o -type f -exec git checkout template/main -- {} \\;"' >> "$config_dir/nvim/.git/config"
+echo 'merge-template = ! "git fetch template && git checkout template/main -- $(git ls-tree -r template/main --name-only | grep -v yanc)' >> "$config_dir/nvim/.git/config"
 
 echo "Use git merge-template to get updates from upstream."
