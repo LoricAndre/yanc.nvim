@@ -73,7 +73,8 @@ use {
 }
 use {
   'ggandor/lightspeed.nvim',
-  as = 'lightspeed'
+  as = 'lightspeed',
+  config = function() require'plugins.lightspeed' end
 }
 use {
   'simrat39/symbols-outline.nvim',
@@ -146,6 +147,10 @@ use {
 use {
   'folke/which-key.nvim',
   config = function() require'plugins.which-key' end
+}
+
+use {
+  'tpope/vim-repeat'
 }
 
 local user_plugins = require'yanc'.plugins
