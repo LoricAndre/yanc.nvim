@@ -6,7 +6,7 @@ vim.g.startify_lists = {
 }
 
 vim.g.startify_commands = {
-  {s = {'Load Session', 'lua require("auto-session").RestoreSession()'}}
+  {s = {'Load Session', 'silent! lua require("auto-session").RestoreSession()'}}
 }
 
 vim.g.startify_session_dir = vim.fn.stdpath('data') .. '/sessions'
