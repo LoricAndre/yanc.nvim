@@ -113,7 +113,10 @@ use {
   config = function() require'plugins.oneterm' end,
 }
 use {
-  'rmagatti/auto-session'
+  'rmagatti/auto-session',
+  config = function()
+    require'plugins.sessions'
+  end
 }
 use {
   'akinsho/nvim-bufferline.lua',
