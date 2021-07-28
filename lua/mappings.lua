@@ -11,8 +11,8 @@ local default_mappings = {
   {'tn', '<C-d>', '<C-\\><C-n>'},
   {'vn', '<', '<gv'},
   {'vn', '>', '>gv'},
-  {'nn', '<leader>q', ':q<CR>'},
-  {'nn', '<leader>bq', ':bd<CR>'}
+  {'nn', '<leader>Q', ':q<CR>'},
+  {'nn', '<leader>q', ':b# | bd<CR>'}
 }
 
 for _, mapping in ipairs(default_mappings) do
