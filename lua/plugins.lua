@@ -136,6 +136,11 @@ use {
 }
 
 use {
+  'mhinz/vim-startify',
+  config = function() require'plugins.startify' end
+}
+
+use {
   'folke/which-key.nvim',
   config = function() require'plugins.which-key' end
 }
