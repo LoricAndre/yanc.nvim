@@ -34,8 +34,8 @@ use {
 }
 use {
   'nvim-treesitter/nvim-treesitter',
-  as = 'treesitter',
-  run = ':TSUpdate'
+  run = ':TSUpdate',
+  config = function() require'plugins.treesitter' end
 }
 use {
   'liuchengxu/vista.vim',
@@ -50,9 +50,9 @@ use {
 }
 use {
   'vhyrro/neorg',
-  as = 'neorg',
   config = function() require'plugins.neorg' end,
-  requires = 'nvim-lua/plenary.nvim'
+  requires = 'nvim-lua/plenary.nvim',
+  after = 'nvim-treesitter'
 }
 use {
   'glepnir/lspsaga.nvim',

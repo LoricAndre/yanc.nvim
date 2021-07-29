@@ -31,6 +31,7 @@ require'compe'.setup {
     vsnip = false,
     ultisnips = false,
     luasnip = false,
+    neorg = true
   }
 }
 
