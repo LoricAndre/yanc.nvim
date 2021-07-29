@@ -51,6 +51,7 @@ use {
 use {
   'vhyrro/neorg',
   as = 'neorg',
+  config = function() require'plugins.neorg' end,
   requires = 'nvim-lua/plenary.nvim'
 }
 use {
