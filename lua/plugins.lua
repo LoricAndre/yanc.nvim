@@ -154,6 +154,13 @@ use {
   'tpope/vim-repeat'
 }
 
+use {
+  'lukas-reineke/indent-blankline.nvim',
+  config = function()
+    require'plugins.indent'
+  end
+}
+
 local user_plugins = require'yanc'.plugins
 for _, plugin in pairs(user_plugins) do
   use(plugin)
